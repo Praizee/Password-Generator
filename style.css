@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  --bg-color: #eef0f4;
+  --color: #333;
+  --togglebg: #333;
+  --roundcolor: #eef0f4;
+  --toggleslider: #111;
+  --togglesliderColor: #111;
+  --filter1: drop-shadow(-8px -8px 12px #ffffff) drop-shadow(8px 8px 12px #c3c5c8);
+  --filter2: drop-shadow(-4px -4px 6px #ffffff) drop-shadow(4px 4px 6px #c3c5c8);
+  --filter3: drop-shadow(-2px -2px 3px #ffffff) drop-shadow(2px 2px 3px #c3c5c8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: "Muli", sans-serif;
+}
+
+p {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin: 2rem auto 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0;
+}
+
+.container {
+  padding: 1.2rem;
+  width: 20rem;
+  max-width: 100%;
+  background: var(--bg-color);
+  border: 1.1rem solid var(--bg-color);
+  border-radius: 0.9rem;
+  filter: var(--filter1);
+  margin: auto;
+}
+
+.result-container {
+  background-color: var(--bg-color);
+  border: 1.2rem solid var(--bg-color);
+  border-radius: 5px;
+  filter: var(--filter2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  height: 3.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  background: none;
+  border: none;
+  color: var(--color);
+  font-size: 1.3rem;
+  margin-top: auto;
+  outline: none;
+  resize: none;
+}
+
+/* .result-container .btn {
+  font-size: 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 2rem;
+  width: 2rem;
+  height: 40px;
+  width: 40px;
+} */
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  color: var(--color);
+  cursor: pointer;
+  font-size: 1.02rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.9rem 0.5rem 0.9rem 0.5rem;
+  background-color: var(--bg-color);
+  filter: var(--filter2);
+}
+
+.btn:hover {
+  filter: var(--filter3);
+  transition: 0.3s ease-in-out;
+}
+
+.length {
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.15rem;
+  margin: 0.9rem 0;
+}
+
+@media screen and (max-width: 400px) {
+
+  .result-container,
+  .setting {
+    font-size: 1.15rem;
+  }
+}
